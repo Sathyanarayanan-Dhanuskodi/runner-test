@@ -15,6 +15,6 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Run test script
+        working-directory: $HOME/Documents/pmo/pmo-api
         run: |
-          cd ../pmo-api/
           git pull https://${{ env.PULL_TOKEN }}@github.com/Sathyanarayanan-Dhanuskodi/runner-test.git
