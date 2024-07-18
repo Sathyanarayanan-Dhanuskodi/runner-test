@@ -17,4 +17,5 @@ jobs:
       - name: Run test script
         run: |
           echo "Hello World"
+          pwd
           git pull https://${{ env.PULL_TOKEN }}@github.com/Sathyanarayanan-Dhanuskodi/runner-test.git
