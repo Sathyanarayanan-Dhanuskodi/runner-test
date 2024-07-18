@@ -1,0 +1,16 @@
+name: runner
+
+on:
+  workflow-dispatch:
+
+jobs:
+  build:
+    runs-on:
+      - self-hosted
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run test script
+        run: |
+          echo "Hello World"
