@@ -3,6 +3,9 @@ name: runner
 on:
   workflow_dispatch:
 
+env:
+  PULL_TOKEN: ${{ secrets.PULL_TOKEN }}
+
 jobs:
   build:
     runs-on:
@@ -14,4 +17,4 @@ jobs:
       - name: Run test script
         run: |
           echo "Hello World"
-          ls
+          git pull https://${{ env.PULL_TOKEN }}@github.com/Sathyanarayanan-Dhanuskodi/runner-test.git
