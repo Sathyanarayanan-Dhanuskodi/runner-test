@@ -14,3 +14,4 @@ jobs:
       - name: Run test script
         run: |
           echo "Hello World"
+          ls
