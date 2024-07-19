@@ -17,4 +17,4 @@ jobs:
       - name: Run test script
         run: |
           cd $HOME/Documents/pmo/pmo-api
-          git pull https://${{ env.PULL_TOKEN }}@github.com/Sathyanarayanan-Dhanuskodi/runner-test.git
+          git pull --ff https://${{ env.PULL_TOKEN }}@github.com/Sathyanarayanan-Dhanuskodi/runner-test.git
